@@ -8435,7 +8435,7 @@ Location:
   right: -65px;
 }
 .hero15-section-area .hero-bg3 {
-  position: absolute;
+  
   top: 0;
   right: 0;
   z-index: -1;
@@ -8448,6 +8448,8 @@ Location:
 .mobile-header.mobile-haeder1 {
   background: var(--ztc-text-text-1);
   position: fixed;
+  height: 130px;
+  overflow: hidden
 }
 
 .mobile-sidebar.mobile-sidebar1 {
@@ -11826,6 +11828,7 @@ Location:
   position: relative;
   z-index: 1;
   padding: 80px 0 0 0;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .footer1-section-area {
@@ -11844,6 +11847,8 @@ Location:
   line-height: var(--ztc-font-size-font-s26);
   font-weight: var(--ztc-weight-regular);
   color: var(--ztc-text-text-3);
+  overflow: hidden;
+  margin-top: -100px;
 }
 .footer1-section-area .footer-logo-area ul {
   margin-top: 24px;
@@ -15129,11 +15134,13 @@ Location:
   overflow-x: hidden;
 }
 .homepage1-body .header-area.homepage1 {
-  position: absolute;
+  
   width: 100%;
   z-index: 9999;
   padding: 16px 0;
   transition: all 0.4s;
+  height: 150px;
+ 
 }
 .homepage1-body .header-area.homepage1 nav#navbar-example2 {
   display: block;
@@ -15148,6 +15155,7 @@ Location:
   justify-content: space-between;
   position: relative;
   transition: all 0.4s;
+      height: 150px;
 }
 .homepage1-body .header-area.homepage1 .header-elements .all-images-menu {
   display: flex;
@@ -15388,6 +15396,7 @@ Location:
   transition: all 0.4s;
   opacity: 1;
   left: 0;
+  overflow: hidden;
 }
 
 .header-area.homepage1.sticky {
@@ -15402,6 +15411,7 @@ Location:
   animation-fill-mode: forwards;
   background: var(--ztc-text-text-1);
   transition: all 0.4s;
+  overflow: hidden;
 }
 
 .btn-area {
