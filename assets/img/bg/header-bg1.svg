@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main soft gradient background -->
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f0f5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e8e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f5;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Top-right purple glow -->
+    <radialGradient id="topRightGlow" cx="85%" cy="15%">
+      <stop offset="0%" style="stop-color:#4e2fda;stop-opacity:0.6" />
+      <stop offset="30%" style="stop-color:#6b46ff;stop-opacity:0.3" />
+      <stop offset="60%" style="stop-color:#8a6fff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#4e2fda;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Bottom-left purple glow -->
+    <radialGradient id="bottomLeftGlow" cx="15%" cy="85%">
+      <stop offset="0%" style="stop-color:#4e2fda;stop-opacity:0.6" />
+      <stop offset="30%" style="stop-color:#6b46ff;stop-opacity:0.3" />
+      <stop offset="60%" style="stop-color:#8a6fff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#4e2fda;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Base light background -->
+  <rect width="1920" height="1080" fill="url(#baseGrad)"/>
+  
+  <!-- Top-right purple accent -->
+  <rect width="1920" height="1080" fill="url(#topRightGlow)"/>
+  
+  <!-- Bottom-left purple accent -->
+  <rect width="1920" height="1080" fill="url(#bottomLeftGlow)"/>
+</svg>

@@ -1,0 +1,166 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4e2fda;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b46ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#f5f7fa"/>
+  
+  <!-- Laptop Container -->
+  <g filter="url(#shadow)">
+    <!-- Laptop Screen -->
+    <rect x="120" y="50" width="1000" height="600" rx="20" fill="#1a1a2e"/>
+    <rect x="140" y="70" width="960" height="560" rx="10" fill="#ffffff"/>
+    
+    <!-- Sidebar -->
+    <rect x="140" y="70" width="180" height="560" rx="10" fill="#2d2d44"/>
+    
+    <!-- Logo Area -->
+    <rect x="155" y="85" width="150" height="40" rx="8" fill="#3a3a52"/>
+    <text x="175" y="110" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff">Inventory</text>
+    
+    <!-- Menu Items -->
+    <rect x="155" y="140" width="150" height="35" rx="8" fill="url(#primaryGrad)"/>
+    <text x="175" y="163" font-family="Arial" font-size="13" fill="#ffffff">🏠 Home</text>
+    
+    <rect x="155" y="185" width="150" height="35" rx="8" fill="transparent"/>
+    <text x="175" y="208" font-family="Arial" font-size="13" fill="#a0a0b0">📦 Inventory</text>
+    
+    <rect x="155" y="230" width="150" height="35" rx="8" fill="transparent"/>
+    <text x="175" y="253" font-family="Arial" font-size="13" fill="#a0a0b0">🛒 Sales</text>
+    
+    <rect x="155" y="275" width="150" height="35" rx="8" fill="transparent"/>
+    <text x="175" y="298" font-family="Arial" font-size="13" fill="#a0a0b0">🔔 Purchases</text>
+    
+    <rect x="155" y="360" width="150" height="35" rx="8" fill="transparent"/>
+    <text x="175" y="383" font-family="Arial" font-size="13" fill="#a0a0b0">⚙️ Integrations</text>
+    
+    <rect x="155" y="405" width="150" height="35" rx="8" fill="transparent"/>
+    <text x="175" y="428" font-family="Arial" font-size="13" fill="#a0a0b0">📊 Reports</text>
+    
+    <!-- Main Content Area -->
+    <text x="340" y="110" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">Sales Activity</text>
+    <text x="900" y="110" font-family="Arial" font-size="20" font-weight="bold" fill="#2d3748">Inventory Summary</text>
+    
+    <!-- Stats Cards -->
+    <rect x="340" y="130" width="110" height="80" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="380" y="165" font-family="Arial" font-size="28" font-weight="bold" fill="url(#primaryGrad)">228</text>
+    <text x="370" y="190" font-family="Arial" font-size="11" fill="#888">TO BE PACKED</text>
+    
+    <rect x="465" y="130" width="110" height="80" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="510" y="165" font-family="Arial" font-size="28" font-weight="bold" fill="#ff6b6b">6</text>
+    <text x="492" y="190" font-family="Arial" font-size="11" fill="#888">TO BE SHIPPED</text>
+    
+    <rect x="590" y="130" width="110" height="80" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="630" y="165" font-family="Arial" font-size="28" font-weight="bold" fill="#51cf66">10</text>
+    <text x="610" y="190" font-family="Arial" font-size="11" fill="#888">TO BE DELIVERED</text>
+    
+    <rect x="715" y="130" width="110" height="80" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="750" y="165" font-family="Arial" font-size="28" font-weight="bold" fill="url(#primaryGrad)">474</text>
+    <text x="738" y="190" font-family="Arial" font-size="11" fill="#888">TO BE INVOICED</text>
+    
+    <!-- Inventory Summary Cards -->
+    <rect x="900" y="130" width="180" height="40" rx="8" fill="#f8f9fa"/>
+    <text x="915" y="150" font-family="Arial" font-size="11" fill="#666">QUANTITY IN HAND</text>
+    <text x="1000" y="150" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">10458</text>
+    
+    <rect x="900" y="180" width="180" height="40" rx="8" fill="#f8f9fa"/>
+    <text x="915" y="200" font-family="Arial" font-size="11" fill="#666">TO BE RECEIVED</text>
+    <text x="1030" y="200" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">168</text>
+    
+    <!-- Product Details Section -->
+    <rect x="340" y="250" width="350" height="200" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="360" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">PRODUCT DETAILS</text>
+    
+    <text x="360" y="310" font-family="Arial" font-size="12" fill="#ff6b6b">Low Stock Items</text>
+    <text x="640" y="310" font-family="Arial" font-size="14" font-weight="bold" fill="#ff6b6b">3</text>
+    
+    <text x="360" y="340" font-family="Arial" font-size="12" fill="#666">All Item Group</text>
+    <text x="640" y="340" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">39</text>
+    
+    <text x="360" y="370" font-family="Arial" font-size="12" fill="#666">All Items</text>
+    <text x="630" y="370" font-family="Arial" font-size="14" font-weight="bold" fill="#2d3748">190</text>
+    
+    <!-- Pie Chart -->
+    <circle cx="590" cy="360" r="50" fill="#51cf66"/>
+    <path d="M 590 310 A 50 50 0 0 1 625 390 L 590 360 Z" fill="#e0e0e0"/>
+    <text x="575" y="370" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff">71%</text>
+    
+    <!-- Purchase Order Section -->
+    <rect x="340" y="470" width="180" height="130" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="360" y="495" font-family="Arial" font-size="13" font-weight="bold" fill="#2d3748">PURCHASE ORDER</text>
+    <text x="360" y="535" font-family="Arial" font-size="12" fill="#666">Quantity Ordered</text>
+    <text x="380" y="570" font-family="Arial" font-size="32" font-weight="bold" fill="url(#primaryGrad)">652.00</text>
+    
+    <!-- Laptop Base -->
+    <rect x="80" y="650" width="1080" height="20" rx="10" fill="#c0c0c0"/>
+    <rect x="100" y="670" width="1040" height="8" rx="4" fill="#a0a0a0"/>
+  </g>
+  
+  <!-- Mobile Device -->
+  <g transform="translate(950, 300)" filter="url(#shadow)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="250" height="480" rx="30" fill="#1a1a2e"/>
+    
+    <!-- Phone Screen -->
+    <rect x="8" y="35" width="234" height="410" rx="20" fill="#ffffff"/>
+    
+    <!-- Notch -->
+    <rect x="80" y="8" width="90" height="20" rx="10" fill="#0a0a14"/>
+    
+    <!-- Status Bar -->
+    <rect x="8" y="35" width="234" height="40" rx="20" fill="url(#primaryGrad)"/>
+    <text x="90" y="62" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Dashboard</text>
+    
+    <!-- Sales Activity Mobile -->
+    <text x="20" y="100" font-family="Arial" font-size="13" font-weight="bold" fill="#2d3748">Sales Activity</text>
+    
+    <!-- Mobile Stats -->
+    <rect x="20" y="115" width="210" height="50" rx="10" fill="#fff5f5"/>
+    <circle cx="35" cy="140" r="12" fill="#ff6b6b"/>
+    <text x="55" y="135" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">466.2</text>
+    <text x="55" y="148" font-family="Arial" font-size="10" fill="#666">To be Packed</text>
+    
+    <rect x="20" y="175" width="210" height="50" rx="10" fill="#f0f5ff"/>
+    <circle cx="35" cy="200" r="12" fill="url(#primaryGrad)"/>
+    <text x="55" y="195" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">21</text>
+    <text x="55" y="208" font-family="Arial" font-size="10" fill="#666">Packages To be Shipped</text>
+    
+    <rect x="20" y="235" width="210" height="50" rx="10" fill="#fff8f0"/>
+    <circle cx="35" cy="260" r="12" fill="#ffa500"/>
+    <text x="55" y="255" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">14</text>
+    <text x="55" y="268" font-family="Arial" font-size="10" fill="#666">Packages To be Delivered</text>
+    
+    <rect x="20" y="295" width="210" height="50" rx="10" fill="#f0fff0"/>
+    <circle cx="35" cy="320" r="12" fill="#51cf66"/>
+    <text x="55" y="315" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748">20833.2</text>
+    <text x="55" y="328" font-family="Arial" font-size="10" fill="#666">Quantity To be Invoiced</text>
+    
+    <!-- Inventory Summary Mobile -->
+    <text x="20" y="370" font-family="Arial" font-size="13" font-weight="bold" fill="#2d3748">Inventory Summary</text>
+    
+    <rect x="20" y="380" width="95" height="40" rx="8" fill="#f8f9fa"/>
+    <text x="30" y="395" font-family="Arial" font-size="9" fill="#666">In Hand</text>
+    <text x="30" y="410" font-family="Arial" font-size="13" font-weight="bold" fill="url(#primaryGrad)">104604</text>
+    
+    <rect x="125" y="380" width="105" height="40" rx="8" fill="#f8f9fa"/>
+    <text x="135" y="395" font-family="Arial" font-size="9" fill="#666">To be Received</text>
+    <text x="165" y="410" font-family="Arial" font-size="13" font-weight="bold" fill="url(#primaryGrad)">356</text>
+    
+    <!-- Bottom Navigation -->
+    <rect x="8" y="445" width="234" height="35" fill="#f8f9fa"/>
+    <circle cx="40" cy="462" r="8" fill="url(#primaryGrad)"/>
+    <circle cx="85" cy="462" r="8" fill="#d0d0d0"/>
+    <circle cx="130" cy="462" r="8" fill="#d0d0d0"/>
+    <circle cx="175" cy="462" r="8" fill="#d0d0d0"/>
+    <circle cx="210" cy="462" r="8" fill="#d0d0d0"/>
+  </g>
+  
+</svg>
