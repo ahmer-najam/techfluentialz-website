@@ -6,7 +6,10 @@
      <title>Techfluentialz – Software Solutions</title>
 
      <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
+    <meta name="theme-color" content="#4E2FDA">
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -216,15 +219,15 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #090B0E;
             overflow-x: hidden;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4E2FDA 0%, #6B4FD9 50%, #3B1FA8 100%);
             color: white;
-            padding: 100px 20px;
+            padding: 80px 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -237,7 +240,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/></svg>');
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none" stroke="white" stroke-width="0.5" opacity="0.08"/></svg>');
             animation: float 20s linear infinite;
         }
 
@@ -254,15 +257,21 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
-            animation: fadeInDown 1s ease;
+            animation: fadeInDown 0.8s ease;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            animation: fadeInUp 1s ease;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @keyframes fadeInDown {
@@ -289,52 +298,68 @@
 
         .service-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .service-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(10px);
             padding: 30px;
             border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.18);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
         }
 
         /* Video Section */
         .video-section {
             padding: 80px 20px;
-            background: #f8f9fa;
+            background: #ffffff;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #667eea;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #4E2FDA;
+            font-weight: 700;
         }
 
         .section-subtitle {
             text-align: center;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #666;
             margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .video-wrapper {
@@ -343,7 +368,7 @@
             height: 0;
             overflow: hidden;
             border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(78, 45, 218, 0.15);
         }
 
         .video-wrapper iframe {
@@ -357,7 +382,7 @@
         /* Carousel Section */
         .carousel-section {
             padding: 80px 20px;
-            background: white;
+            background: #f8f9fa;
         }
 
         .content-with-carousel {
@@ -369,14 +394,18 @@
 
         .text-content h2 {
             font-size: 2.5rem;
-            color: #667eea;
-            margin-bottom: 20px;
+            background: linear-gradient(135deg, #4E2FDA 0%, #6B4FD9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            font-weight: 700;
         }
 
         .text-content p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #555;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             line-height: 1.8;
         }
 
@@ -384,7 +413,7 @@
             position: relative;
             overflow: hidden;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 35px rgba(78, 45, 218, 0.15);
         }
 
         .carousel-track {
@@ -408,31 +437,35 @@
             justify-content: space-between;
             transform: translateY(-50%);
             padding: 0 20px;
+            z-index: 10;
         }
 
         .carousel-btn {
-            background: rgba(255, 255, 255, 0.9);
+            background: #ffffff;
             border: none;
             width: 50px;
             height: 50px;
             border-radius: 50%;
             cursor: pointer;
             font-size: 1.5rem;
-            color: #667eea;
+            color: #4E2FDA;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(78, 45, 218, 0.2);
+            font-weight: bold;
         }
 
         .carousel-btn:hover {
-            background: white;
+            background: #4E2FDA;
+            color: white;
             transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(78, 45, 218, 0.35);
         }
 
         .carousel-dots {
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .dot {
@@ -445,35 +478,37 @@
         }
 
         .dot.active {
-            background: #667eea;
-            width: 30px;
+            background: #4E2FDA;
+            width: 32px;
             border-radius: 6px;
         }
 
         /* Gallery Section */
         .gallery-section {
             padding: 80px 20px;
-            background: #f8f9fa;
+            background: #ffffff;
         }
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
         }
 
         .gallery-item {
             position: relative;
-            height: 250px;
+            height: 280px;
             border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
         }
 
         .gallery-item:hover {
-            transform: scale(1.05);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(78, 45, 218, 0.2);
         }
 
         .gallery-item img {
@@ -487,11 +522,22 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            background: linear-gradient(to top, rgba(78, 45, 218, 0.95), rgba(78, 45, 218, 0.4));
             color: white;
-            padding: 20px;
+            padding: 25px;
             transform: translateY(100%);
             transition: transform 0.3s ease;
+        }
+
+        .gallery-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .gallery-overlay p {
+            font-size: 0.95rem;
+            opacity: 0.9;
         }
 
         .gallery-item:hover .gallery-overlay {
@@ -507,7 +553,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.9);
+            background: rgba(0, 0, 0, 0.95);
             animation: fadeIn 0.3s ease;
         }
 
@@ -520,7 +566,7 @@
             position: relative;
             margin: 5% auto;
             width: 90%;
-            max-width: 800px;
+            max-width: 900px;
             animation: slideIn 0.3s ease;
         }
 
@@ -531,12 +577,12 @@
 
         .modal-content img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 12px;
         }
 
         .modal-close {
             position: absolute;
-            top: -40px;
+            top: -45px;
             right: 0;
             color: white;
             font-size: 40px;
@@ -546,28 +592,62 @@
         }
 
         .modal-close:hover {
-            color: #667eea;
+            color: #4E2FDA;
         }
 
         .modal-nav {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.95);
             border: none;
             width: 50px;
             height: 50px;
             border-radius: 50%;
             cursor: pointer;
             font-size: 1.5rem;
-            color: #667eea;
+            color: #4E2FDA;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .modal-nav:hover {
+            background: #4E2FDA;
+            color: white;
         }
 
         .modal-prev { left: -60px; }
         .modal-next { right: -60px; }
 
         /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .content-with-carousel {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .text-content h2 {
+                font-size: 2rem;
+            }
+
+            .carousel-slide {
+                height: 350px;
+            }
+        }
+
         @media (max-width: 768px) {
+            .hero {
+                padding: 60px 15px;
+            }
+
             .hero h1 {
                 font-size: 2rem;
             }
@@ -576,38 +656,29 @@
                 font-size: 1rem;
             }
 
-            .content-with-carousel {
-                grid-template-columns: 1fr;
+            .service-cards {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 15px;
+            }
+
+            .service-card {
+                padding: 20px;
+            }
+
+            .service-card h3 {
+                font-size: 1.1rem;
             }
 
             .section-title {
-                font-size: 2rem;
-            }
-
-            .text-content h2 {
                 font-size: 1.8rem;
             }
 
+            .text-content h2 {
+                font-size: 1.6rem;
+            }
+
             .carousel-slide {
-                height: 250px;
-            }
-
-            .modal-prev { left: 10px; }
-            .modal-next { right: 10px; }
-
-            .modal-content {
-                width: 95%;
-                margin: 10% auto;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 60px 15px;
-            }
-
-            .service-cards {
-                grid-template-columns: 1fr;
+                height: 280px;
             }
 
             .carousel-btn {
@@ -617,7 +688,106 @@
             }
 
             .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+
+            .gallery-item {
+                height: 220px;
+            }
+
+            .modal-prev { left: 10px; }
+            .modal-next { right: 10px; }
+
+            .modal-content {
+                width: 95%;
+                margin: 20% auto;
+            }
+
+            .video-section {
+                padding: 60px 15px;
+            }
+
+            .carousel-section {
+                padding: 60px 15px;
+            }
+
+            .gallery-section {
+                padding: 60px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 12px;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+                margin-bottom: 25px;
+            }
+
+            .service-cards {
                 grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .service-card {
+                padding: 15px;
+            }
+
+            .service-card h3 {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
+            }
+
+            .carousel-slide {
+                height: 220px;
+            }
+
+            .carousel-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                height: 200px;
+            }
+
+            .modal-close {
+                top: -35px;
+                font-size: 32px;
+            }
+
+            .video-section,
+            .carousel-section,
+            .gallery-section {
+                padding: 40px 12px;
+            }
+
+            .content-with-carousel {
+                gap: 25px;
+            }
+
+            .text-content p {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -766,7 +936,7 @@
     <div class="row">
       <div class="col-lg-3 col-md-6">
         <div class="footer-logo-area" style="margin-top: -100px;">
-           <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" style="width: 400px; height: 270px;"a>
+          <a href="index.html"><img src="assets/img/logo/logo1.png" alt="Techfluentialz Logo" style="width: 350px; height:250px"></a>
           <p>Techfluentialz is a software development company delivering innovative solutions, transforming ideas into scalable applications, and helping businesses grow through technology</p>
           <ul>
             <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
@@ -785,6 +955,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="service1.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="my-pro-erp.html">Products</a></li>
           </ul>
         </div>
       </div>
@@ -793,9 +964,9 @@
         <div class="footer-logo-area2">
           <h3>Get in touch</h3>
           <ul>
-            <li><a href="mailto"><img src="assets/img/icons/email.svg" alt=""><span>info@yourcompany.com</span></a></li>
-            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span> J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan </span></a></li>
-            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>92 3458292535</span></a></li>
+            <li><a href="mailto:info@techfluentialz.com"><img src="assets/img/icons/email.svg" alt=""><span>info@techfluentialz.com</span></a></li>
+            <li><a href="https://www.google.com/maps?q=J+15%2F3+7th+Gizri+Street+Phase+IV+DHA+Karachi+Pakistan" target="_blank"><img src="assets/img/icons/location.svg" alt=""><span>J 15/3, 7th Gizri Street, Phase IV, D.H.A Karachi, Pakistan</span></a></li>
+            <li><a href="tel:+923458292535"><img src="assets/img/icons/phone.svg" alt=""><span>+92 345 8292535</span></a></li>
           </ul>
         </div>
       </div>
