@@ -6,7 +6,10 @@
      <title>Techfluentialz – Software Solutions</title>
 
      <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
+    <meta name="theme-color" content="#4E2FDA">
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -21,6 +24,51 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
+
+    <!--===== Custom Location Styles =======-->
+    <style>
+      .location-card {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        border-left: 4px solid #4E2FDA;
+      }
+
+      .location-card:hover {
+        box-shadow: 0 15px 40px rgba(78, 45, 218, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .location-card-inner {
+        text-align: left;
+      }
+
+      .map-container {
+        background: white;
+      }
+
+      @media (max-width: 768px) {
+        .location-card {
+          padding: 20px;
+        }
+
+        .map-container {
+          height: 400px !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .location-card {
+          padding: 15px;
+        }
+
+        .map-container {
+          height: 300px !important;
+        }
+      }
+    </style>
 </head>
 <body class="homepage1-body">
 
@@ -407,7 +455,53 @@ J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan
   </div>
 </div> -->
 
-<div class="mapouter">
+<!--===== LOCATION SECTION WITH INTERACTIVE MAP =======-->
+<div class="location-section-area sp2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 m-auto">
+        <div class="location-header text-center heading2">
+          <h5>Our Location</h5>
+          <h2>Find Us in Karachi Gizri</h2>
+          <p>Click on any location card below to view it on the map</p>
+        </div>
+      </div>
+    </div>
+    <div class="space60 d-lg-block d-none"></div>
+    <div class="space30 d-lg-none d-block"></div>
+
+    <div class="row">
+      <!-- Location Cards -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="location-card" onclick="setMapLocation(24.8242, 67.0649, 'Gizri Gate, Karachi')" style="cursor: pointer; transition: all 0.3s ease;">
+          <div class="location-card-inner">
+            <div class="location-icon" style="font-size: 2.5rem; margin-bottom: 15px;">
+              <i class="fas fa-map-marker-alt" style="color: #4E2FDA;"></i>
+            </div>
+            <h4 style="color: #4E2FDA; margin-bottom: 10px; font-weight: 600;">Gizri Gate</h4>
+            <p style="color: #666; margin-bottom: 12px;">J 15/3, 7th Gizri Street, Phase IV, D.H.A, Karachi</p>
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 12px; margin-top: 12px;">
+              <p style="color: #4E2FDA; font-weight: 600; margin-bottom: 5px;">Main Office</p>
+              <a href="tel:+923458292535" style="color: #090B0E; text-decoration: none;">+92 345 8292535</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Interactive Map Section -->
+<div class="map-section-area" style="padding: 60px 20px; background: #f8f9fa;">
+  <div class="container">
+    <div class="map-container" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(78, 45, 218, 0.15); height: 500px; position: relative;">
+      <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.4267999999997!2d67.06490000000001!3d24.824199999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e5f5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sJ%2015%2F3%2C%207th%20Gizri%20Street%2C%20Phase%20IV%2C%20D.H.A%2C%20Karachi!5e0!3m2!1sen!2s!4v1704088968016" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+<!--===== LOCATION SECTION WITH INTERACTIVE MAP ENDS =======-->
+
+<div class="mapouter" style="display: none;">
   <div class="gmap_canvas">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4506257.120552435!2d88.67021924228865!3d21.954385721237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1704088968016!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
@@ -420,9 +514,16 @@ J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan
     <div class="row">
       <div class="col-lg-3 col-md-6">
         <div class="footer-logo-area" style="margin-top: -100px;">
-           <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" style="width: 400px; height: 270px;"a>
-          <p>Techfluentialz is a software development company delivering innovative solutions, transforming ideas into scalable applications, and helping businesses grow through technology</p>
-          <ul>
+          <a href="index.html">
+            <img src="assets/img/logo/logo1.png" alt="Techfluentialz Logo" style="width: 350px; height:250px">
+          </a>
+
+          <p>
+            Techfluentialz is a software development company delivering innovative solutions,
+            transforming ideas into scalable applications, and helping businesses grow through technology.
+          </p>
+
+          <ul style="padding-left: 0;">
             <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
             <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
             <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
@@ -438,6 +539,7 @@ J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan
             <li><a href="about.html">About Us</a></li>
             <li><a href="service1.html">Services</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="my-pro-erp.html">Products</a></li>
           </ul>
         </div>
       </div>
@@ -445,9 +547,32 @@ J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan
         <div class="footer-logo-area2">
           <h3>Get in touch</h3>
           <ul>
-            <li><a href="mailto"><img src="assets/img/icons/email.svg" alt=""><span>info@techfluentialz.com</span></a></li>
-            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>Karachi, Sindh, Pakistan</span></a></li>
-            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>123-456-7890</span></a></li>
+
+            <!-- Email -->
+            <li>
+              <a href="mailto:info@techfluentialz.com">
+                <img src="assets/img/icons/email.svg" alt="">
+                <span>info@techfluentialz.com</span>
+              </a>
+            </li>
+
+            <!-- Google Maps Location Link (Fixed) -->
+            <li>
+              <a href="https://www.google.com/maps?q=J+15%2F3+7th+Gizri+Street+Phase+IV+DHA+Karachi+Pakistan" 
+                 target="_blank">
+                <img src="assets/img/icons/location.svg" alt="">
+                <span>J 15/3, 7th Gizri Street, Phase IV, D.H.A Karachi, Pakistan</span>
+              </a>
+            </li>
+
+            <!-- Phone -->
+            <li>
+              <a href="tel:+923458292535">
+                <img src="assets/img/icons/phone.svg" alt="">
+                <span>+92 345 8292535</span>
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -499,6 +624,58 @@ J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan
 <script src="assets/js/plugins/slick-slider.js"></script>
 <script src="assets/js/plugins/circle-progress.js"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- Google Maps Embed -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPucczywCeZUNjIHlPOqCvzCGJuOFb-cE"></script>
+
+<script>
+  // Location data for Karachi Gizri
+  const locations = {
+    gizri: {
+      lat: 24.8242,
+      lng: 67.0649,
+      name: 'Gizri Gate, Karachi',
+      address: 'J 15/3, 7th Gizri Street, Phase IV, D.H.A, Karachi',
+      phone: '+92 345 8292535',
+      embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.4267999999997!2d67.06490000000001!3d24.824199999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e5f5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sJ%2015%2F3%2C%207th%20Gizri%20Street%2C%20Phase%20IV%2C%20D.H.A%2C%20Karachi!5e0!3m2!1sen!2s!4v1704088968016'
+    }
+  };
+
+  // Function to update map when location card is clicked
+  function setMapLocation(lat, lng, title) {
+    const locationName = title.toLowerCase().replace(/,.*/, '');
+    const location = Object.values(locations).find(loc => loc.name.toLowerCase().includes(locationName));
+    
+    if (location) {
+      // Update iframe src to new location
+      const iframeUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.4267999999997!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e5f5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sJ%2015%2F3%2C%207th%20Gizri%20Street%2C%20Phase%20IV%2C%20D.H.A%2C%20Karachi!5e0!3m2!1sen!2s!4v1704088968016`;
+      document.getElementById('locationMap').src = iframeUrl;
+      
+      // Add animation to card
+      const card = event.target.closest('.location-card');
+      if (card) {
+        card.style.transform = 'scale(1.05)';
+        setTimeout(() => {
+          card.style.transform = 'scale(1)';
+        }, 200);
+      }
+    }
+  }
+
+  // Add hover effects to location cards
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.location-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.boxShadow = '0 15px 40px rgba(78, 45, 218, 0.25)';
+        this.style.transform = 'translateY(-5px)';
+      });
+      card.addEventListener('mouseleave', function() {
+        this.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.08)';
+        this.style.transform = 'translateY(0)';
+      });
+    });
+  });
+</script>
 
 </body>
 </html>

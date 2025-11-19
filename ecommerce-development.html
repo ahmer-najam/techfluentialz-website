@@ -22,179 +22,211 @@
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
 </head>
+
 <body class="homepage1-body">
 
-<!--===== PRELOADER STARTS =======-->
+<!-- Preloader -->
 <div class="preloader">
   <div class="loading-container">
     <div class="loading"></div>
     <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
   </div>
 </div>
-<!--===== PRELOADER ENDS =======-->
 
-<!--===== PROGRESS STARTS=======-->
+<!-- Progress Bar -->
 <div class="paginacontainer">
      <div class="progress-wrap">
        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
        </svg>
      </div>
-   </div>
- <!--===== PROGRESS ENDS=======-->
+</div>
 
-   <!--=====HEADER START=======-->
-      <header>
-    <div class="header-area homepage1 header header-sticky d-none d-lg-block " id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="header-elements">
-              <div class="site-logo" style="margin-left: -40px;">
-                <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" style="width: 400px; height: 270px;"a>
-              </div>
-              <div class="main-menu">
-                <ul>
-                  <li><a href="index.html">Home</a>
-                   
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
-                   <ul class="dropdown-padding">
-  <li><a href="saasProducts.html">Saas Products</a></li>
-  <li><a href="moblileApp.html">Mobile App Development</a></li>
-  <li><a href="CustomSoftwareSolutions.html">Custom Software Solutions</a></li>
-  <li><a href="ecommerce-development.html">E-Commerce Development</a></li>
-</ul>
-</li>
-              
-                  </li>
+<!--=====HEADER START=======-->
+<header>
+  <div class="header-area homepage1 header header-sticky d-none d-lg-block" id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
 
-                  <li><a href="#">products <i class="fa-solid fa-angle-down"></i></a>
-                   <ul class="dropdown-padding">
-  <li><a href="my-pro-erp.html">My Pro Erp</a></li>
-  
-</ul>
-</li>
-              
-                  </li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="btn-area">
-                <div class="search-icon header__search header-search-btn">
-                  <a href="#"><img src="assets/img/icons/search-icons1.svg" alt=""></a>
-                </div>
-                <a href="contact.html" class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
-              </div>
+          <div class="header-elements">
 
-              <div class="header-search-form-wrapper">
-                <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
-                <div class="header-search-container">
-                    <form role="search" class="search-form">
-                    <input type="search"  class="search-field" placeholder="Search …" value="" name="s">
-                    <button type="submit" class="search-submit"><img src="assets/img/icons/search-icons1.svg" alt=""></button>
-                    </form>
-                </div>
+            <!-- LOGO -->
+            <div class="site-logo" style="margin-left: -40px;">
+              <a href="index.html">
+                <img src="assets/img/logo/logo1.png" alt="" style="width:400px; height:270px;">
+              </a>
             </div>
+
+            <!-- NAVIGATION -->
+            <div class="main-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <!-- SERVICES DROPDOWN -->
+                <li>
+                  <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="dropdown-padding">
+                    <li><a href="saasProducts.html">Saas Products</a></li>
+                    <li><a href="moblileApp.html">Mobile App Development</a></li>
+                    <li><a href="CustomSoftwareSolutions.html">Custom Software Solutions</a></li>
+                    <li><a href="ecommerce-development.html">E-Commerce Development</a></li>
+                  </ul>
+                </li>
+
+                <!-- PRODUCTS DROPDOWN -->
+                <li>
+                  <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="dropdown-padding">
+                    <li><a href="my-pro-erp.html">My Pro Erp</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- BUTTON + SEARCH -->
+            <div class="btn-area">
+              <div class="search-icon header__search header-search-btn">
+                <a href="#"><img src="assets/img/icons/search-icons1.svg" alt=""></a>
+              </div>
+
+              <a href="contact.html" class="header-btn1">
+                Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+
+            <!-- SEARCH BOX -->
+            <div class="header-search-form-wrapper">
+              <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
+              <div class="header-search-container">
+                <form role="search" class="search-form">
+                  <input type="search" class="search-field" placeholder="Search …" name="s">
+                  <button type="submit" class="search-submit">
+                    <img src="assets/img/icons/search-icons1.svg" alt="">
+                  </button>
+                </form>
+              </div>
+            </div>
+
             <div class="body-overlay"></div>
-            </div>
-          </div>
+
+          </div><!-- header-elements -->
         </div>
       </div>
     </div>
-  </header>
-  <!--=====HEADER END =======-->
+  </div>
+</header>
+<!--=====HEADER END =======-->
 
-  <!--===== MOBILE HEADER STARTS =======-->
- <div class="mobile-header mobile-haeder1 d-block d-lg-none">
+
+
+<!--===== MOBILE HEADER STARTS =======-->
+<div class="mobile-header mobile-haeder1 d-block d-lg-none">
   <div class="container-fluid">
     <div class="col-12">
       <div class="mobile-header-elements">
+
         <div class="mobile-logo">
-          <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" style="width:280px;height:190px;margin-top: -40px;"></a>
+          <a href="index.html">
+            <img src="assets/img/logo/logo1.png" alt="" style="width:280px;height:190px;margin-top:-40px;">
+          </a>
         </div>
+
         <div class="mobile-nav-icon dots-menu">
           <i class="fa-solid fa-bars"></i>
         </div>
+
       </div>
     </div>
   </div>
 </div>
 
 <div class="mobile-sidebar mobile-sidebar1">
+
   <div class="logosicon-area">
     <div class="logos">
-        <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" style="width:310px;height:210px;margin-top: -40px;"></a>
+      <a href="index.html">
+        <img src="assets/img/logo/logo1.png" alt="" style="width:310px;height:210px;margin-top:-40px;">
+      </a>
     </div>
+
     <div class="menu-close">
       <i class="fa-solid fa-xmark"></i>
     </div>
-   </div>
+  </div>
+
   <div class="mobile-nav mobile-nav1">
     <ul class="mobile-nav-list nav-list1">
-      <li><a href="index.html" >Home </a>
-      </li>
+      
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-       <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
-                   <ul class="dropdown-padding">
-  <li><a href="saasProducts.html">Saas Products</a></li>
-  <li><a href="moblileApp.html">Mobile App Development</a></li>
-  <li><a href="CustomSoftwareSolutions.html">Custom Software Solutions</a></li>
 
-  <li><a href="ecommerce-development.html">E-Commerce Development</a></li>
-
-</ul>
-
-<li><a href="#">products <i class="fa-solid fa-angle-down"></i></a>
-                   <ul class="dropdown-padding">
-  <li><a href="my-pro-erp.html">My Pro Erp</a></li>
+      <!-- MOBILE SERVICES DROPDOWN -->
+      <li>
+        <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="dropdown-padding">
+          <li><a href="saasProducts.html">Saas Products</a></li>
+          <li><a href="moblileApp.html">Mobile App Development</a></li>
+          <li><a href="CustomSoftwareSolutions.html">Custom Software Solutions</a></li>
+          <li><a href="ecommerce-development.html">E-Commerce Development</a></li>
+        </ul>
       </li>
+
+      <!-- MOBILE PRODUCTS DROPDOWN -->
+      <li>
+        <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="dropdown-padding">
+          <li><a href="my-pro-erp.html">My Pro Erp</a></li>
+        </ul>
+      </li>
+
       <li><a href="contact.html">Contact Us</a></li>
+
     </ul>
 
+    <!-- MOBILE FOOTER SECTIONS -->
     <div class="allmobilesection">
-      <a href="contact.html"  class="header-btn1">Get Started <span><i class="fa-solid fa-arrow-right"></i></span></a>
+
+      <a href="contact.html" class="header-btn1">
+        Get Started <span><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
       <div class="single-footer">
         <h3>Contact Info</h3>
+
         <div class="footer1-contact-info">
+
           <div class="contact-info-single">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-phone-volume"></i>
-            </div>
-            <div class="contact-info-text">
-              <a href="tel:+92 3458292535">+92 3458292535</a>
-            </div>
+            <div class="contact-info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="contact-info-text"><a href="tel:+923458292535">+92 3458292535</a></div>
           </div>
 
           <div class="contact-info-single">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
             <div class="contact-info-text">
               <a href="mailto:info@techfluentialz.com">
-    <img src="assets/img/icons/email.svg" alt="">
-    <span>info@techfluentialz.com</span>
-  </a>
+                <img src="assets/img/icons/email.svg" alt="">
+                <span>info@techfluentialz.com</span>
+              </a>
             </div>
           </div>
 
           <div class="single-footer">
             <h3>Our Location</h3>
-            
             <div class="contact-info-single">
-              <div class="contact-info-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div class="contact-info-text">
-                <a href="#" >J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan </a>
+                <a href="#">J 15/3, 7th Gizri Street Phase IV, D.H.A. Karachi Pakistan</a>
               </div>
             </div>
-
           </div>
+
           <div class="single-footer">
             <h3>Social Links</h3>
-            
             <div class="social-links-mobile-menu">
               <ul>
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -204,21 +236,26 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-     </div>
-  </div>
-</div>
-<!--===== MOBILE HEADER STARTS =======-->
 
-<!--===== HERO AREA STARTS =======-->
+        </div><!-- footer1-contact-info -->
+
+      </div><!-- single-footer -->
+
+    </div><!-- allmobilesection -->
+
+  </div><!-- mobile-nav -->
+</div>
+<!--===== MOBILE HEADER ENDS =======-->
+   <!--===== HERO AREA STARTS =======-->
 <div class="about-header-area" style="background-image: url(assets/img/bg/inner-header.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <img src="assets/img/elements/elements1.png" alt="" class="elements1 aniamtion-key-1">
+    <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 m-auto">
                 <div class="col-lg-12 text-center">
-                    <h1>Our E-Commerce Development Services</h1>
-                    <span><a href="index.html">Home</a> > E-Commerce Development</span>
+                    <h1>E-Commerce Development Services</h1>
+                    <span><a href="index.html">Home</a> > E-Commerce</span>
                 </div>
             </div>
         </div>
@@ -226,53 +263,240 @@
 </div>
 <!--===== HERO AREA ENDS =======-->
 
-<!--===== E-COMMERCE SERVICE START =======-->
-<div class="webdesign-section sp2">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Left Side: Text -->
-      <div class="col-lg-6 col-md-12">
-        <div class="webdesign-content">
-          <h2 class="heading2">E-Commerce Development Services</h2>
-          <p>
-            We build scalable, secure, and high-performing e-commerce solutions tailored 
-            to your business. Whether it’s a custom online store, marketplace, or 
-            subscription platform — we help you sell smarter and grow faster.
-          </p>
-          <ul class="list-style">
-            <li><i class="fa-solid fa-check"></i> Custom Online Store Development</li>
-            <li><i class="fa-solid fa-check"></i> Secure Payment Gateway Integration</li>
-            <li><i class="fa-solid fa-check"></i> Shopping Cart & Checkout Solutions</li>
-            <li><i class="fa-solid fa-check"></i> Marketplace & Multi-Vendor Platforms</li>
-            <li><i class="fa-solid fa-check"></i> SEO & Conversion Optimization</li>
-          </ul>
-          <div class="space20"></div>
-          <a href="contact.html" class="header-btn1">Get a Free Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
+<!--===== E-COMMERCE SERVICE SECTION START =======-->
+
+<!--===== SERVICE OVERVIEW STARTS =======-->
+<div class="service-overview-area sp2" style="background: linear-gradient(135deg, rgba(78, 45, 218, 0.05) 0%, rgba(78, 45, 218, 0.02) 100%);">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-7">
+          <div class="service-overview-content heading2">
+            <h2 style="color: #4E2FDA; font-weight: 700;">E-Commerce Solutions That Drive Sales</h2>
+            <p style="font-size: 18px; line-height: 1.8; color: #666; margin-top: 20px;">
+              We build scalable, secure, and high-performing e-commerce solutions tailored to your business. From custom online stores to marketplace platforms, we create digital storefronts that convert visitors into customers and help you scale your revenue exponentially.
+            </p>
+            <div class="space32"></div>
+            <a href="contact.html" class="header-btn1">Launch Your Store <span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="service-overview-image">
+            <img src="assets/img/services/Ecommerce-development.png" alt="E-Commerce Development" class="img-fluid" style="border-radius: 15px; box-shadow: 0 20px 60px rgba(78, 45, 218, 0.15);">
+          </div>
         </div>
       </div>
-
-      <!-- Right Side: Image -->
-      <div class="col-lg-6 col-md-12 text-center">
-        <div class="webdesign-image">
-          <img src="assets/img/services/Ecommerce-development.png" alt="E-Commerce Development" class="img-fluid">
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
-<!--===== E-COMMERCE SERVICE END =======-->
+<!--===== SERVICE OVERVIEW ENDS =======-->
 
+<!--===== ECOMMERCE SERVICES STARTS =======-->
+<div class="ecommerce-services-area sp2">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 m-auto text-center">
+          <h3 style="color: #4E2FDA; font-size: 28px; font-weight: 700; margin-bottom: 15px;">Our E-Commerce Services</h3>
+          <p style="color: #666; font-size: 16px;">Complete solutions for building and managing your online store</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #4E2FDA 0%, #6B4FD9 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-store"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Online Store Build</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Custom-designed online stores with intuitive product catalogs, inventory management, and seamless user experience.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #6B4FD9 0%, #5238C3 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-credit-card"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Payment Integration</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Secure integration with Stripe, PayPal, Square, and other payment gateways for multiple payment options.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #5238C3 0%, #3B1FA8 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-shopping-cart"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Shopping Cart Systems</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Advanced cart functionality with one-click checkout, discount codes, and abandoned cart recovery.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #3B1FA8 0%, #2D1680 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-layer-group"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Marketplace Platforms</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Multi-vendor marketplace solutions with seller dashboards, commission management, and vendor tools.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #4E2FDA 0%, #6B4FD9 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-boxes"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Inventory Management</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Real-time inventory tracking, stock level alerts, automated reordering, and multi-warehouse management.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #6B4FD9 0%, #5238C3 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-truck"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Shipping & Logistics</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Shipping integrations, rate calculation, tracking systems, and delivery management solutions.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #5238C3 0%, #3B1FA8 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-chart-line"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Analytics & Reports</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Comprehensive dashboards, sales reports, customer insights, and performance metrics to drive decisions.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="service-card" style="background: linear-gradient(135deg, #3B1FA8 0%, #2D1680 100%); padding: 40px 25px; border-radius: 15px; color: white; min-height: 350px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(78, 45, 218, 0.15);">
+            <div style="font-size: 40px; margin-bottom: 20px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">SEO Optimization</h4>
+            <p style="font-size: 14px; line-height: 1.7; opacity: 0.95;">Search engine optimization, product page optimization, and conversion rate optimization strategies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--===== ECOMMERCE SERVICES ENDS =======-->
+
+<!--===== ECOMMERCE PROCESS STARTS =======-->
+<div class="ecommerce-process-area sp2" style="background: linear-gradient(135deg, rgba(78, 45, 218, 0.05) 0%, rgba(78, 45, 218, 0.02) 100%);">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 m-auto text-center">
+          <h3 style="color: #4E2FDA; font-size: 28px; font-weight: 700; margin-bottom: 15px;">Our E-Commerce Development Process</h3>
+          <p style="color: #666; font-size: 16px;">A proven methodology for building successful online stores</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4E2FDA 0%, #6B4FD9 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 24px; margin-bottom: 20px;">1</div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Discovery & Planning</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Understand your business, target market, products, and goals to create the perfect e-commerce strategy.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #6B4FD9 0%, #5238C3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 24px; margin-bottom: 20px;">2</div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Design & UX</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Create intuitive, mobile-friendly designs that guide customers smoothly through the shopping experience.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #5238C3 0%, #3B1FA8 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 24px; margin-bottom: 20px;">3</div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Development & Integration</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Build robust store functionality with payment, inventory, shipping, and third-party integrations.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #3B1FA8 0%, #2D1680 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 24px; margin-bottom: 20px;">4</div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Launch & Optimize</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Deploy your store, monitor performance, and continuously optimize for conversions and revenue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--===== ECOMMERCE PROCESS ENDS =======-->
+
+<!--===== ECOMMERCE BENEFITS STARTS =======-->
+<div class="ecommerce-benefits-area sp2">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 m-auto text-center">
+          <h3 style="color: #4E2FDA; font-size: 28px; font-weight: 700; margin-bottom: 15px;">Why Choose Our E-Commerce Solutions</h3>
+          <p style="color: #666; font-size: 16px;">Key advantages for your online business success</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="margin-bottom: 20px;"><i class="fa-solid fa-mobile" style="font-size: 40px; color: #4E2FDA;"></i></div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Mobile Optimized</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Fully responsive design that works flawlessly on all devices, capturing mobile commerce opportunities.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="margin-bottom: 20px;"><i class="fa-solid fa-bolt" style="font-size: 40px; color: #6B4FD9;"></i></div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Lightning Fast</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Optimized performance and fast loading times that reduce cart abandonment and boost conversion rates.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="margin-bottom: 20px;"><i class="fa-solid fa-lock" style="font-size: 40px; color: #5238C3;"></i></div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Secure & Compliant</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">PCI compliance, SSL encryption, and security best practices to protect customer data and transactions.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="margin-bottom: 20px;"><i class="fa-solid fa-sliders" style="font-size: 40px; color: #3B1FA8;"></i></div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Easy Management</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Intuitive admin dashboards for managing products, orders, customers, and business operations effortlessly.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="margin-bottom: 20px;"><i class="fa-solid fa-arrow-up-right-dots" style="font-size: 40px; color: #2D1680;"></i></div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Scalable Platform</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Built to grow with your business, handling increased traffic, products, and transactions seamlessly.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div style="padding: 30px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+            <div style="margin-bottom: 20px;"><i class="fa-solid fa-plug" style="font-size: 40px; color: #4E2FDA;"></i></div>
+            <h4 style="color: #090B0E; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Easy Integrations</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.7;">Seamless integration with marketing tools, accounting software, CRM systems, and other business apps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--===== ECOMMERCE BENEFITS ENDS =======-->
+
+<!--===== E-COMMERCE SERVICE SECTION END =======-->
 <!--===== FOOTER AREA STARTS =======-->
 <div class="footer1-section-area">
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-6">
         <div class="footer-logo-area" style="margin-top: -100px;">
-           <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" style="width: 400px; height: 270px;"a>
-          <p>Techfluentialz is a software development company delivering innovative solutions, transforming ideas into scalable applications, and helping businesses grow through technology</p>
-          <ul>
+          <a href="index.html">
+            <img src="assets/img/logo/logo1.png" alt="Techfluentialz Logo" style="width: 350px; height:250px">
+          </a>
+
+          <p>
+            Techfluentialz is a software development company delivering innovative solutions,
+            transforming ideas into scalable applications, and helping businesses grow through technology.
+          </p>
+
+          <ul style="padding-left: 0;">
             <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
             <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
             <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
@@ -298,14 +522,32 @@
         <div class="footer-logo-area2">
           <h3>Get in touch</h3>
           <ul>
+
+            <!-- Email -->
             <li>
-  <a href="mailto:info@techfluentialz.com">
-    <img src="assets/img/icons/email.svg" alt="">
-    <span>info@techfluentialz.com</span>
-  </a>
-</li>
-            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span> J 15/3 , 7th Gizri Street Phase IV . D.H.A. Karachi Pakistan </span></a></li>
-            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>92 3458292535</span></a></li>
+              <a href="mailto:info@techfluentialz.com">
+                <img src="assets/img/icons/email.svg" alt="">
+                <span>info@techfluentialz.com</span>
+              </a>
+            </li>
+
+            <!-- Google Maps Location Link (Fixed) -->
+            <li>
+              <a href="https://www.google.com/maps?q=J+15%2F3+7th+Gizri+Street+Phase+IV+DHA+Karachi+Pakistan" 
+                 target="_blank">
+                <img src="assets/img/icons/location.svg" alt="">
+                <span>J 15/3, 7th Gizri Street, Phase IV, D.H.A Karachi, Pakistan</span>
+              </a>
+            </li>
+
+            <!-- Phone -->
+            <li>
+              <a href="tel:+923458292535">
+                <img src="assets/img/icons/phone.svg" alt="">
+                <span>+92 345 8292535</span>
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -337,6 +579,7 @@
   </div>
 </div>
 <!--===== FOOTER AREA ENDS =======-->
+</div>
 
 <!--===== JS SCRIPT LINK =======-->
 <script src="assets/js/plugins/bootstrap.min.js"></script>
